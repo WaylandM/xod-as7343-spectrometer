@@ -1,3 +1,221 @@
 {
-  "description": "Patch to demonstrate detection of analog and digital saturation. Run in debugger. N.B. EXPERIMENTAL: USE AT OWN RISK."
+  "description": "Patch to demonstrate detection of analog and digital saturation. Run in debugger. N.B. EXPERIMENTAL: USE AT OWN RISK.",
+  "links": [
+    {
+      "id": "rJ-M3usJQ32",
+      "input": {
+        "nodeId": "BJe3OoyQ33",
+        "pinKey": "BJk95MGF5"
+      },
+      "output": {
+        "nodeId": "HJhOo17nn",
+        "pinKey": "rJiHKfzYq"
+      }
+    },
+    {
+      "id": "ByzGhuoJm2h",
+      "input": {
+        "nodeId": "Sy4huikm33",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HJhOo17nn",
+        "pinKey": "rJiHKfzYq"
+      }
+    },
+    {
+      "id": "rJ7f3Oj1mnh",
+      "input": {
+        "nodeId": "SyWnuokQn2",
+        "pinKey": "HyIz0w6Qo"
+      },
+      "output": {
+        "nodeId": "HyH3us1723",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BkPf3ds1m3h",
+      "input": {
+        "nodeId": "rJ9l3Ooym32",
+        "pinKey": "S1gUgHZ0Xi"
+      },
+      "output": {
+        "nodeId": "rJ6e2djkm32",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SJuMndikmnn",
+      "input": {
+        "nodeId": "HJjg2_jkmnh",
+        "pinKey": "S1loPOZC7i"
+      },
+      "output": {
+        "nodeId": "HJCe3ds1X2h",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BJKf3usymh2",
+      "input": {
+        "nodeId": "rJnxndikX23",
+        "pinKey": "BkeZaFZ0Qs"
+      },
+      "output": {
+        "nodeId": "ryJb3_sym32",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S19z2uj1Qnh",
+      "input": {
+        "nodeId": "HJjg2_jkmnh",
+        "pinKey": "SkGiv_WAQs"
+      },
+      "output": {
+        "nodeId": "BJe3OoyQ33",
+        "pinKey": "H1v6qMzK5"
+      }
+    },
+    {
+      "id": "rJsM3di1Qn2",
+      "input": {
+        "nodeId": "rJ9l3Ooym32",
+        "pinKey": "H1XUeH-CQj"
+      },
+      "output": {
+        "nodeId": "HJjg2_jkmnh",
+        "pinKey": "H1-iPu-CQj"
+      }
+    },
+    {
+      "id": "Hknz3dsy7n2",
+      "input": {
+        "nodeId": "rJnxndikX23",
+        "pinKey": "ByM-atbAXj"
+      },
+      "output": {
+        "nodeId": "rJ9l3Ooym32",
+        "pinKey": "SyzUxrbRQi"
+      }
+    },
+    {
+      "id": "HyEFiyQhn",
+      "input": {
+        "nodeId": "SyWnuokQn2",
+        "pinKey": "rJ6zAwp7j"
+      },
+      "output": {
+        "nodeId": "rJnxndikX23",
+        "pinKey": "B1WZpYb0Qs"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "HJhOo17nn",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "@/as7343-device"
+    },
+    {
+      "id": "BJe3OoyQ33",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "@/init"
+    },
+    {
+      "id": "SyWnuokQn2",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 4
+      },
+      "type": "@/read-all-channels"
+    },
+    {
+      "id": "Sy4huikm33",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "HyH3us1723",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "rJ9l3Ooym32",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "@/set-astep"
+    },
+    {
+      "id": "HJjg2_jkmnh",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3
+      },
+      "type": "@/set-atime"
+    },
+    {
+      "id": "rJnxndikX23",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 3
+      },
+      "type": "@/set-gain"
+    },
+    {
+      "id": "rJ6e2djkm32",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "HJCe3ds1X2h",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "ryJb3_sym32",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    }
+  ]
 }
