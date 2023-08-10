@@ -1,5 +1,5 @@
 {
-  "description": "Create an as7341-device.",
+  "description": "Create an as7343-device.",
   "nodes": [
     {
       "id": "S1O7FfGF5",

@@ -11,7 +11,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "An as7341-device.",
+      "description": "An as7343-device.",
       "id": "S1gn9bzRXi",
       "label": "DEV",
       "position": {

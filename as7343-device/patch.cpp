@@ -7,7 +7,7 @@
 node {
     meta {
         // Define our custom type as a pointer on the class instance.
-        using Type = Adafruit_AS7341*;
+        using Type = AMS_OSRAM_AS7343*;
     }
 
     // Create an object of the class AS7341

@@ -12,7 +12,7 @@ node {
 
 
        if (gain<1) {
-           if (!sensor->setGain(AS7341_GAIN_0_5X)) {
+           if (!sensor->setGain(AS7343_GAIN_0_5X)) {
                raiseError(ctx);
                return;
            }
@@ -20,7 +20,7 @@ node {
        }
 
        if (gain==1) {
-           if (!sensor->setGain(AS7341_GAIN_1X)) {
+           if (!sensor->setGain(AS7343_GAIN_1X)) {
                raiseError(ctx);
                return;
            }
@@ -28,7 +28,7 @@ node {
        }
 
        if (gain==2) {
-           if (!sensor->setGain(AS7341_GAIN_2X)) {
+           if (!sensor->setGain(AS7343_GAIN_2X)) {
                raiseError(ctx);
                return;
            }
@@ -36,7 +36,7 @@ node {
        }
 
        if (gain==4) {
-           if (!sensor->setGain(AS7341_GAIN_4X)) {
+           if (!sensor->setGain(AS7343_GAIN_4X)) {
                raiseError(ctx);
                return;
            }
@@ -44,7 +44,7 @@ node {
        }
 
        if (gain==8) {
-           if (!sensor->setGain(AS7341_GAIN_8X)) {
+           if (!sensor->setGain(AS7343_GAIN_8X)) {
                raiseError(ctx);
                return;
            }
@@ -52,7 +52,7 @@ node {
        }
 
        if (gain==16) {
-           if (!sensor->setGain(AS7341_GAIN_16X)) {
+           if (!sensor->setGain(AS7343_GAIN_16X)) {
                raiseError(ctx);
                return;
            }
@@ -60,7 +60,7 @@ node {
        }
 
        if (gain==32) {
-           if (!sensor->setGain(AS7341_GAIN_32X)) {
+           if (!sensor->setGain(AS7343_GAIN_32X)) {
                raiseError(ctx);
                return;
            }
@@ -68,7 +68,7 @@ node {
        }
 
        if (gain==64) {
-           if (!sensor->setGain(AS7341_GAIN_64X)) {
+           if (!sensor->setGain(AS7343_GAIN_64X)) {
                raiseError(ctx);
                return;
            }
@@ -76,7 +76,7 @@ node {
        }
 
        if (gain==128) {
-           if (!sensor->setGain(AS7341_GAIN_128X)) {
+           if (!sensor->setGain(AS7343_GAIN_128X)) {
                raiseError(ctx);
                return;
            }
@@ -84,7 +84,7 @@ node {
        }
 
        if (gain==256) {
-           if (!sensor->setGain(AS7341_GAIN_256X)) {
+           if (!sensor->setGain(AS7343_GAIN_256X)) {
                raiseError(ctx);
                return;
            }
@@ -92,7 +92,23 @@ node {
        }
 
        if (gain==512) {
-           if (!sensor->setGain(AS7341_GAIN_512X)) {
+           if (!sensor->setGain(AS7343_GAIN_512X)) {
+               raiseError(ctx);
+               return;
+           }
+           emitValue<output_DONE>(ctx, 1);
+       }
+
+       if (gain==1024) {
+           if (!sensor->setGain(AS7343_GAIN_1024X)) {
+               raiseError(ctx);
+               return;
+           }
+           emitValue<output_DONE>(ctx, 1);
+       }
+
+       if (gain==2048) {
+           if (!sensor->setGain(AS7343_GAIN_2048X)) {
                raiseError(ctx);
                return;
            }

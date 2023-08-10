@@ -9,7 +9,7 @@ node {
 
        auto sensor = getValue<input_DEV>(ctx);
 
-       emitValue<output_VALUE>(ctx, sensor->getChannel(AS7341_CHANNEL_415nm_F1));
+       emitValue<output_VALUE>(ctx, sensor->getChannel(AS7343_CHANNEL_550_F5));
 
        emitValue<output_DONE>(ctx, 1);
 

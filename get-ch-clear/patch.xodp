@@ -1,8 +1,8 @@
 {
-  "description": "Enable control of attached LED.",
+  "description": "Get the most recent measurement from the \"clear\" (unfiltered) channel.",
   "nodes": [
     {
-      "id": "rkBHEzAXi",
+      "id": "Hkk6ndTQj",
       "position": {
         "units": "slots",
         "x": 0,
@@ -12,7 +12,7 @@
     },
     {
       "description": "An as7343-device.",
-      "id": "BklHHVfAms",
+      "id": "Sylyphdamo",
       "label": "DEV",
       "position": {
         "units": "slots",
@@ -22,12 +22,23 @@
       "type": "@/input-as7343-device"
     },
     {
-      "description": "Pulses if LED is successfully enabled/disabled.",
-      "id": "S1-SrVGRmj",
-      "label": "DONE",
+      "description": "Raw measurement from the \"clear\" (unfiltered) channel.",
+      "id": "Sysl6dpXj",
+      "label": "VALUE",
       "position": {
         "units": "slots",
         "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "HJ1w6dTXo",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 1,
         "y": 2
       },
       "type": "xod/patch-nodes/output-pulse"
@@ -37,25 +48,14 @@
         "__out__": "Continuously"
       },
       "description": "Update.",
-      "id": "SyGSHNMAQs",
+      "id": "HJJqaOpQo",
       "label": "UPD",
-      "position": {
-        "units": "slots",
-        "x": 2,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-pulse"
-    },
-    {
-      "description": "If true, LED is enabled. If false, LED is disabled.",
-      "id": "ByL8NMRXs",
-      "label": "Enable",
       "position": {
         "units": "slots",
         "x": 1,
         "y": 0
       },
-      "type": "xod/patch-nodes/input-boolean"
+      "type": "xod/patch-nodes/input-pulse"
     }
   ]
 }

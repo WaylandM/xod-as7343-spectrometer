@@ -1,6 +1,6 @@
 {
-  "description": "Adafruit AS7341 10-Channel Spectral Sensor. Wraps https://github.com/adafruit/Adafruit_AS7341.",
+  "description": "AMS OSRAM AS7343 14-Channel Spectral Sensor. Wraps https://github.com/WaylandM/AMS_OSRAM_AS7343. Datasheet: https://ams.com/documents/20143/6705498/AS7343_DS001046_6_00.pdf",
   "license": "BSD",
-  "name": "as7341-spectrometer",
-  "version": "0.0.3"
+  "name": "as7343-spectrometer",
+  "version": "0.0.1"
 }

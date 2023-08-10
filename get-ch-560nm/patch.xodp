@@ -1,5 +1,5 @@
 {
-  "description": "Get the most recent measurement from the 415nm channel.",
+  "description": "Get the most recent measurement from the 560nm channel.",
   "nodes": [
     {
       "id": "Hkk6ndTQj",
@@ -11,7 +11,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "An as7341-device.",
+      "description": "An as7343-device.",
       "id": "Sylyphdamo",
       "label": "DEV",
       "position": {
@@ -22,7 +22,7 @@
       "type": "@/input-as7343-device"
     },
     {
-      "description": "Raw measurement from the 415nm channel.",
+      "description": "Raw measurement from the 560nm channel.",
       "id": "Sysl6dpXj",
       "label": "VALUE",
       "position": {

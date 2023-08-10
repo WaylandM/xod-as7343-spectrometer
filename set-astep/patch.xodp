@@ -11,7 +11,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "An as7341-device.",
+      "description": "An as7343-device.",
       "id": "S1gUgHZ0Xi",
       "label": "DEV",
       "position": {
@@ -50,7 +50,7 @@
       "boundLiterals": {
         "__out__": "100"
       },
-      "description": "Integration time step size in 2.78 microsecond increments. Step size is ASTEP × 2.78µS.",
+      "description": "Integration time step size in 2.78 microsecond increments. Step size is (ASTEP+1) × 2.78µS.",
       "id": "HyvbSZCXo",
       "label": "ASTEP",
       "position": {
