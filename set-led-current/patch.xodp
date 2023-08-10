@@ -1,0 +1,64 @@
+{
+  "description": "Set the current limit for the LED.",
+  "nodes": [
+    {
+      "id": "Bkh9Zf0Qi",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An as7341-device.",
+      "id": "S1gn9bzRXi",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-as7343-device"
+    },
+    {
+      "description": "Pulses if LED current limit is set successfully.",
+      "id": "Hy-h9ZzRXi",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update.",
+      "id": "rJfhcZGRms",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "100"
+      },
+      "description": "LED current limit in mA. Range is 4mA to 258mA.",
+      "id": "ryXnqWGRmj",
+      "label": "mA",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    }
+  ]
+}

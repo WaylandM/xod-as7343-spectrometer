@@ -1,0 +1,61 @@
+{
+  "description": "Initialize sensor.",
+  "nodes": [
+    {
+      "id": "SJYO9GfYq",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An as7341-device.",
+      "id": "BJk95MGF5",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-as7343-device"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Pulse triggers initialization.",
+      "id": "rJdsqfMtc",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on successful initialization.",
+      "id": "H1v6qMzK5",
+      "label": "OK",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "I²C bus",
+      "id": "HJ-xhvTQi",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/i2c/input-i2c"
+    }
+  ]
+}

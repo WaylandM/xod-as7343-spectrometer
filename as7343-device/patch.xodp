@@ -1,0 +1,25 @@
+{
+  "description": "Create an as7341-device.",
+  "nodes": [
+    {
+      "id": "S1O7FfGF5",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An as7341 device.",
+      "id": "rJiHKfzYq",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-self"
+    }
+  ]
+}
