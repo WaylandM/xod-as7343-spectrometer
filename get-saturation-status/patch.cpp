@@ -8,9 +8,10 @@ node {
            return;
 
        auto sensor = getValue<input_DEV>(ctx);
-       
-       emitValue<output_VALUE>(ctx, sensor->getChannel(AS7343_CHANNEL_550_F5));
-       
+
+       emitValue<output_Analog>(ctx, sensor->analogSaturation());
+       emitValue<output_Digital>(ctx, sensor->digitalSaturation());
+
        emitValue<output_DONE>(ctx, 1);
 
     }

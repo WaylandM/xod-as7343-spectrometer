@@ -464,17 +464,6 @@
       }
     },
     {
-      "id": "HyKfStM32",
-      "input": {
-        "nodeId": "ryoQ3vGR7s",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "r1JYNtMh2",
-        "pinKey": "Sysl6dpXj"
-      }
-    },
-    {
       "id": "rJoMHYM2n",
       "input": {
         "nodeId": "rJjbhvfRXj",
@@ -528,6 +517,17 @@
         "nodeId": "BkXvEtzh2",
         "pinKey": "Sysl6dpXj"
       }
+    },
+    {
+      "id": "r1KwUhXn2",
+      "input": {
+        "nodeId": "ryoQ3vGR7s",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "r1JYNtMh2",
+        "pinKey": "Sysl6dpXj"
+      }
     }
   ],
   "nodes": [
@@ -564,6 +564,11 @@
         "units": "slots",
         "x": 2,
         "y": 5
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
       },
       "type": "xod/debug/watch"
     },
@@ -712,6 +717,11 @@
         "x": 4,
         "y": 5
       },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
       "type": "xod/debug/watch"
     },
     {
@@ -720,6 +730,11 @@
         "units": "slots",
         "x": 6,
         "y": 5
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
       },
       "type": "xod/debug/watch"
     },
@@ -730,6 +745,11 @@
         "x": 8,
         "y": 5
       },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
       "type": "xod/debug/watch"
     },
     {
@@ -738,6 +758,11 @@
         "units": "slots",
         "x": 10,
         "y": 5
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
       },
       "type": "xod/debug/watch"
     },
@@ -748,6 +773,11 @@
         "x": 12,
         "y": 5
       },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
       "type": "xod/debug/watch"
     },
     {
@@ -756,6 +786,11 @@
         "units": "slots",
         "x": 14,
         "y": 5
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
       },
       "type": "xod/debug/watch"
     },
@@ -766,6 +801,11 @@
         "x": 16,
         "y": 5
       },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
       "type": "xod/debug/watch"
     },
     {
@@ -774,6 +814,11 @@
         "units": "slots",
         "x": 18,
         "y": 5
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
       },
       "type": "xod/debug/watch"
     },
@@ -784,9 +829,17 @@
         "x": 20,
         "y": 5
       },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
       "type": "xod/debug/watch"
     },
     {
+      "boundLiterals": {
+        "HyvbSZCXo": "999"
+      },
       "id": "BkiwKfA7o",
       "position": {
         "units": "slots",
@@ -796,6 +849,9 @@
       "type": "@/set-astep"
     },
     {
+      "boundLiterals": {
+        "S1XsvdZAQi": "100"
+      },
       "id": "ByJOKMAXs",
       "position": {
         "units": "slots",
@@ -979,6 +1035,11 @@
         "x": 22,
         "y": 5
       },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
       "type": "xod/debug/watch"
     },
     {
@@ -988,6 +1049,11 @@
         "x": 24,
         "y": 5
       },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
       "type": "xod/debug/watch"
     },
     {
@@ -996,6 +1062,11 @@
         "units": "slots",
         "x": 26,
         "y": 5
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
       },
       "type": "xod/debug/watch"
     }
